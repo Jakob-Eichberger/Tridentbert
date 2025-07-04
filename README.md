@@ -16,6 +16,6 @@ Tridentbert is my take on a 300 x 300 x 250mm Voron Trident, a popular open sour
 * Electronics are mounted on the side for super easy maintenance.
 
 # License
-This repositories license ONLY applies to the frame, panel and electronics sidepack. This project does not alter nor try to alter the licencse of used mods.
+Since this printers fame is derived from a Voron Trident, the Voron Trident License applies to the frame only. The panels and electronics sidepack are off my own design and are licensed under `Attribution-NonCommercial-ShareAlike 4.0 International`. This project does not alter nor try to alter the licencse of used mods.
 * Monolith gantry: https://github.com/CloakedWayne/Monolith_Gantry_V2-VT?tab=License-1-ov-file#readme
 * Takeoff toolhead: https://github.com/Kizime123/Takeoff-Toolhead?tab=GPL-3.0-1-ov-file#readme
