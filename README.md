@@ -1,5 +1,5 @@
 # Tridentbert
-Tridentbert is my take on a 300 x 300 x 250mm Voron Trident, a popular open source diy 3d printer, changed with all the best mods making this one of the most capable 3d printers on the market today.
+Tridentbert is my take on a 300 x 300 x 250mm Voron Trident, a popular open source diy 3d printer, changed with all the best mods making this one of the most capable 3d printer on the market today.
 
 ![Picture](https://github.com/user-attachments/assets/fdbd59c5-3636-4c9a-92c3-7388b3cc6b4c)
 
