@@ -1,9 +1,7 @@
 # Tridentbert
 Tridentbert is my take on a 300 x 300 x 250mm Voron Trident, a popular open source diy 3d printer, changed with all the best mods making this one of the most capable 3d printers on the market today.
 
-![Photo_Machine_LowRes](https://github.com/user-attachments/assets/beda0685-62f1-4a83-aea3-eaa3096edb47)
-
-![Cad_LookInside](https://github.com/user-attachments/assets/e92cfe52-9488-4c4c-91ef-a13597b65487)
+![Picture](https://github.com/user-attachments/assets/fdbd59c5-3636-4c9a-92c3-7388b3cc6b4c)
 
 # Improvements over a stock Voron Trident
 > [!CAUTION]
@@ -12,7 +10,7 @@ Tridentbert is my take on a 300 x 300 x 250mm Voron Trident, a popular open sour
 
 * 4040 based 20 extrusions for increased frame rigidity, which helps when printing at high speed and with high belt tension.
 * 6mm aluminium panels all around the machine, to increase rigidity even more.
-* Monolith 9mm AWD sheet metal gantry which is the best gantry design currently on the market.
+* Monolith 9mm AWD sheet metal gantry, which is the best gantry design currently on the market.
 * Using Takeoff toolhead with Chube and a CNC Sherpa Mini extruder for maximum extrusion performance.
 * Z stepper motors mounted directly to the bottom aluminum panel for easy mounting.
 * Electronics are mounted on the side for super easy maintenance.
