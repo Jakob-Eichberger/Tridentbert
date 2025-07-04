@@ -14,3 +14,8 @@ Tridentbert is my take on a 300 x 300 x 250mm Voron Trident, a popular open sour
 * Using Takeoff toolhead with Chube and a CNC Sherpa Mini extruder for maximum extrusion performance.
 * Z stepper motors mounted directly to the bottom aluminum panel for easy mounting.
 * Electronics are mounted on the side for super easy maintenance.
+
+# License
+This repositories license ONLY applies to the frame, panel and electronics sidepack. This project does not alter nor try to alter the licencse of used mods.
+* Monolith gantry: https://github.com/CloakedWayne/Monolith_Gantry_V2-VT?tab=License-1-ov-file#readme
+* Takeoff toolhead: https://github.com/Kizime123/Takeoff-Toolhead?tab=GPL-3.0-1-ov-file#readme
