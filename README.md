@@ -5,13 +5,13 @@ Tridentbert is my take on a 300 x 300 x 250mm Voron Trident, a popular open sour
 
 # Improvements over a stock Voron Trident
 > [!CAUTION]
-> This design is based on and will only with Takeoff toolhead and Chube hotend. This is because of the changed gantry height so that Takeoff wont hit one of the z leadscrews.
+> This design is based on and will only work with Takeoff toolhead and Chube hotend. This is because of the changed gantry height so that Takeoff wont hit one of the z leadscrews.
 > **Using a more standard Voron toolhead might result in the nozzle not beeing able to reach the bed!**
 
 * 4040 based 20 extrusions for increased frame rigidity, which helps when printing at high speed and with high belt tension.
 * 6mm aluminium panels all around the machine, to increase rigidity even more.
 * Monolith 9mm AWD sheet metal gantry, which is the best gantry design currently on the market.
-* Using Takeoff toolhead with Chube and a CNC Sherpa Mini extruder for maximum extrusion performance.
+* Using Takeoff toolhead with Chube, Beacon probe and a CNC Sherpa Mini extruder from Fystec for maximum extrusion performance.
 * Z stepper motors mounted directly to the bottom aluminum panel for easy mounting.
 * Electronics are mounted on the side for super easy maintenance.
 
