@@ -72,18 +72,15 @@ system_dependencies = system-dependencies.json
 primary_branch = main
 managed_services = klipper
 
-[update_manager afc-software]
-type = git_repo
-path = ~/AFC-Klipper-Add-On
-origin = https://github.com/ArmoredTurtle/AFC-Klipper-Add-On.git
-managed_services = klipper
-primary_branch = main
-is_system_service = False
-info_tags = 
-	desc=AFC Klipper Add On
-
 [mmu_server]
 enable_file_preprocessor = True
 enable_toolchange_next_pos = True
 update_spoolman_location = True
+
+[update_manager happy-hare]
+type = git_repo
+path = ~/Happy-Hare
+origin = https://github.com/moggieuk/Happy-Hare.git
+primary_branch = main
+managed_services = klipper
 
