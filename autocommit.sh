@@ -36,57 +36,10 @@ branch=ConfigBackup
 
 db_file=~/printer_data/database/moonraker-sql.db
 
-#####################################################################
-#####################################################################
-
-
 
 #####################################################################
 ################ !!! DO NOT EDIT BELOW THIS LINE !!! ################
 #####################################################################
-
-scan_git_repos() {
-  git_info=""
-
-  # Ignore only irrelevant large dirs
-  ignore_dirs=(
-   "$HOME/.cache"
-   "$HOME/.local"
-   "$HOME/printer_data"
-  )
-
-  ignore_args=()
-  for d in "${ignore_dirs[@]}"; do
-    ignore_args+=(-path "$d" -prune -o)
-  done
-
-  # Find all .git directories
-  mapfile -t repos < <(
-    find "$HOME" \
-      "${ignore_args[@]}" \
-      -type d -name ".git" -print
-  )
-
-  for gitdir in "${repos[@]}"; do
-    repo_path=$(dirname "$gitdir")
-
-    # Extract remote URL (origin)
-    remote_url=$(git -C "$repo_path" remote get-url origin 2>/dev/null)
-
-    # Extract branch name (works even if HEAD is detached)
-    branch=$(git -C "$repo_path" rev-parse --abbrev-ref HEAD 2>/dev/null)
-
-    # Extract commit hash
-    commit_hash=$(git -C "$repo_path" rev-parse --short HEAD 2>/dev/null)
-
-    # Only add if repo is valid
-    if [ ! -z "$commit_hash" ] && [ ! -z "$remote_url" ]; then
-      git_info+="'$remote_url' - '$branch' - $commit_hash"$'\n'
-    fi
-  done
-}
-
-
 grab_version(){
   if [ ! -z "$klipper_folder" ]; then
     klipper_commit=$(git -C $klipper_folder describe --always --tags --long | awk '{gsub(/^ +| +$/,"")} {print $0}')
@@ -129,26 +82,10 @@ push_config(){
   cd $config_folder
   git pull origin $branch --no-rebase
   git add .
-
   current_date=$(date +"%Y-%m-%d %T")
-
-  # Add repo scan info
-  scan_git_repos
-
-  git commit -m "Autocommit from $current_date" \
-             -m "$m1" -m "$m2" -m "$m3" -m "$m4" \
-             -m "Git repositories under ~:" \
-             -m "$git_info"
-
+  git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
   git push origin $branch
-}
-
-
-cleanup_database(){
-  cd $config_folder
-  rm moonraker-sql.db
 }
 
 grab_version
 push_config
-cleanup_database
