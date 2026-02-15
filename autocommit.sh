@@ -51,7 +51,8 @@ scan_git_repos() {
   # Ignore only irrelevant large dirs
   ignore_dirs=(
    "$HOME/.cache"
-    "$HOME/.local"
+   "$HOME/.local"
+   "$HOME/printer_data"
   )
 
   ignore_args=()
